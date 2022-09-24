@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #1e2d3b;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+.records-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.card {
+  text-align: center;
+  color: white;
+  background-color: #2e3a46;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+picture {
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: block;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+
+h4,
+p {
+  color: #777777;
+}

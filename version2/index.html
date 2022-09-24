@@ -12,11 +12,20 @@
 
   <body>
     <div id="app">
-      <ul>
-        <li v-for="album in records">
-          <h3>{{ album.title }}</h3>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="records-list">
+          <li v-for="album in records">
+            <div class="card">
+              <picture>
+                <img :src="album.poster" />
+              </picture>
+              <h3 class="title">{{ album.title }}</h3>
+              <h4 class="author">{{ album.author }}</h4>
+              <p class="year">{{ album.year }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script src="./main.js"></script>
